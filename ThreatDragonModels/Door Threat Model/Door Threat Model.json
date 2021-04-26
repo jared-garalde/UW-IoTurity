@@ -638,7 +638,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 21",
+                      "text": "State Change\nFunction",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -675,7 +675,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "State Change"
+                  "text": "State Change\nCheck"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
