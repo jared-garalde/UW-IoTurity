@@ -59,8 +59,8 @@
                 "height": 80
               },
               "position": {
-                "x": 1049,
-                "y": 158
+                "x": 1042,
+                "y": 142
               },
               "angle": 0,
               "id": "c46b50f3-ca49-4eaf-9d49-008c66d13fba",
@@ -85,8 +85,8 @@
                 "height": 100
               },
               "position": {
-                "x": 653,
-                "y": 342
+                "x": 651,
+                "y": 333
               },
               "angle": 0,
               "id": "d00ac923-645f-49a8-947c-b701f1e7ee00",
@@ -111,8 +111,8 @@
                 "height": 100
               },
               "position": {
-                "x": 659,
-                "y": 194
+                "x": 649,
+                "y": 168
               },
               "angle": 0,
               "id": "83aabebe-533d-4640-a1cf-c72a97d3d288",
@@ -137,8 +137,8 @@
                 "height": 100
               },
               "position": {
-                "x": 660,
-                "y": 30
+                "x": 659,
+                "y": 1
               },
               "angle": 0,
               "id": "91fc0a0a-7582-4abd-b074-52a482d09515",
@@ -365,48 +365,6 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "3ee0ba67-c046-4ada-83aa-5a864d1e2e8a"
-              },
-              "target": {
-                "id": "91fc0a0a-7582-4abd-b074-52a482d09515"
-              },
-              "vertices": [
-                {
-                  "x": 488,
-                  "y": 41
-                }
-              ],
-              "id": "5b5a235a-4b4c-42f1-aa16-6fa0dddaeaaf",
-              "labels": [
-                {
-                  "position": {
-                    "distance": 0.5413920544536268,
-                    "offset": -0.11077211015152093
-                  },
-                  "attrs": {
-                    "text": {
-                      "text": "Topic Status",
-                      "font-weight": "400",
-                      "font-size": "small"
-                    }
-                  }
-                }
-              ],
-              "z": 15,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
-                },
-                ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Flow",
-              "smooth": true,
-              "source": {
                 "id": "c46b50f3-ca49-4eaf-9d49-008c66d13fba"
               },
               "target": {
@@ -414,8 +372,8 @@
               },
               "vertices": [
                 {
-                  "x": 940,
-                  "y": 52
+                  "x": 948,
+                  "y": 48
                 }
               ],
               "id": "10b0c3d1-27bc-47bc-a0c5-788dfe55d13b",
@@ -424,7 +382,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Status",
+                      "text": "Topic Status",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -449,8 +407,8 @@
                 "height": 80
               },
               "position": {
-                "x": 46,
-                "y": 247
+                "x": 34,
+                "y": 151
               },
               "angle": 0,
               "id": "721901a6-e45f-4fec-a37e-532e53874fea",
@@ -461,7 +419,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "store 13"
+                  "text": "Client Local Storage"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -475,8 +433,8 @@
                 "height": 80
               },
               "position": {
-                "x": 1191,
-                "y": 262
+                "x": 1239,
+                "y": 146
               },
               "angle": 0,
               "id": "c0bb15e1-a886-460f-8d12-ddd532835868",
@@ -493,12 +451,67 @@
                   "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 421,
+                "y": 291
+              },
+              "target": {
+                "x": 455,
+                "y": 169
+              },
+              "vertices": [],
+              "id": "2e56c1e9-ce4b-4cd1-96c7-a12d6fad2cf6",
+              "z": 19,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "91fc0a0a-7582-4abd-b074-52a482d09515"
+              },
+              "target": {
+                "id": "3ee0ba67-c046-4ada-83aa-5a864d1e2e8a"
+              },
+              "vertices": [
+                {
+                  "x": 481,
+                  "y": 50
+                }
+              ],
+              "id": "b1e4d84a-1eb3-48e2-baed-d6f9e35dcd84",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Topic Status",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 20,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
           "height": 590,
-          "width": 1400
+          "width": 1427
         }
       }
     ]
