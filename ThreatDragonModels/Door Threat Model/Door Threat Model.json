@@ -85,8 +85,8 @@
                 "height": 100
               },
               "position": {
-                "x": 710,
-                "y": 260
+                "x": 670,
+                "y": 270
               },
               "angle": 0,
               "id": "d00ac923-645f-49a8-947c-b701f1e7ee00",
@@ -495,32 +495,6 @@
               }
             },
             {
-              "type": "tm.Process",
-              "size": {
-                "width": 100,
-                "height": 100
-              },
-              "position": {
-                "x": 912,
-                "y": 669
-              },
-              "angle": 0,
-              "id": "ed65991a-00e6-4711-b9e4-06c31a1b7ac7",
-              "z": 21,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "process 16"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
               "type": "tm.Flow",
               "smooth": true,
               "source": {
@@ -762,7 +736,7 @@
                 "height": 80
               },
               "position": {
-                "x": 1120,
+                "x": 680,
                 "y": 420
               },
               "angle": 0,
@@ -774,7 +748,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "Logs"
+                  "text": "Messages"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -900,6 +874,66 @@
                 },
                 ".connection": {
                   "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "24b45371-c69d-43ab-929a-86b64d6360bc"
+              },
+              "target": {
+                "id": "f71618c1-9a3c-4b6e-9a3c-95b167cad31e"
+              },
+              "vertices": [],
+              "id": "e3043cc1-72df-40db-b1b8-4d1fcef09461",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 28",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 35,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 100,
+                "y": 470
+              },
+              "angle": 0,
+              "id": "fddfde9d-c164-4383-82e8-4a306cbc1fcc",
+              "z": 36,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "GitHub"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             }
