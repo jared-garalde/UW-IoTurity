@@ -541,7 +541,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Topic",
+                      "text": "Topic Status",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -703,7 +703,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 23",
+                      "text": "Topic Status",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -762,8 +762,8 @@
                 "height": 80
               },
               "position": {
-                "x": 1384,
-                "y": 476
+                "x": 1120,
+                "y": 420
               },
               "angle": 0,
               "id": "f71618c1-9a3c-4b6e-9a3c-95b167cad31e",
@@ -785,12 +785,12 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 391,
-                "y": 241
+                "x": 360,
+                "y": 250
               },
               "target": {
-                "x": 528,
-                "y": 202
+                "x": 570,
+                "y": 200
               },
               "vertices": [
                 {
