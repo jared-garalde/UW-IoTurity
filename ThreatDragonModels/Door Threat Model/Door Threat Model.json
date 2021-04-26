@@ -111,7 +111,7 @@
                 "height": 100
               },
               "position": {
-                "x": 670,
+                "x": 660,
                 "y": 120
               },
               "angle": 0,
@@ -612,7 +612,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "State Change\nFunction",
+                      "text": "State Change",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -637,8 +637,8 @@
                 "height": 100
               },
               "position": {
-                "x": 370,
-                "y": 410
+                "x": 390,
+                "y": 390
               },
               "angle": 0,
               "id": "24b45371-c69d-43ab-929a-86b64d6360bc",
@@ -736,8 +736,8 @@
                 "height": 80
               },
               "position": {
-                "x": 680,
-                "y": 420
+                "x": 710,
+                "y": 460
               },
               "angle": 0,
               "id": "f71618c1-9a3c-4b6e-9a3c-95b167cad31e",
@@ -893,7 +893,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 28",
+                      "text": "State Change Status",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -918,8 +918,8 @@
                 "height": 80
               },
               "position": {
-                "x": 100,
-                "y": 470
+                "x": 80,
+                "y": 450
               },
               "angle": 0,
               "id": "fddfde9d-c164-4383-82e8-4a306cbc1fcc",
