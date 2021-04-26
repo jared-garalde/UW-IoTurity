@@ -59,8 +59,8 @@
                 "height": 80
               },
               "position": {
-                "x": 1045,
-                "y": 142
+                "x": 1030,
+                "y": 120
               },
               "angle": 0,
               "id": "c46b50f3-ca49-4eaf-9d49-008c66d13fba",
@@ -85,8 +85,8 @@
                 "height": 100
               },
               "position": {
-                "x": 647,
-                "y": 275
+                "x": 710,
+                "y": 260
               },
               "angle": 0,
               "id": "d00ac923-645f-49a8-947c-b701f1e7ee00",
@@ -111,8 +111,8 @@
                 "height": 100
               },
               "position": {
-                "x": 637,
-                "y": 117
+                "x": 670,
+                "y": 120
               },
               "angle": 0,
               "id": "83aabebe-533d-4640-a1cf-c72a97d3d288",
@@ -238,10 +238,13 @@
               "id": "c9eb9190-b8c6-4a4e-b1d5-06814c3c47fb",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.6064191721717486,
+                    "offset": -9.904268675118882
+                  },
                   "attrs": {
                     "text": {
-                      "text": "Paho Client Object",
+                      "text": "Paho Client Object\nRequest",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -343,7 +346,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Paho Client Object",
+                      "text": "Paho Client Object\nRequest",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -407,8 +410,8 @@
                 "height": 80
               },
               "position": {
-                "x": 4,
-                "y": 233
+                "x": 30,
+                "y": 240
               },
               "angle": 0,
               "id": "721901a6-e45f-4fec-a37e-532e53874fea",
@@ -660,8 +663,8 @@
                 "height": 100
               },
               "position": {
-                "x": 383,
-                "y": 323
+                "x": 400,
+                "y": 400
               },
               "angle": 0,
               "id": "24b45371-c69d-43ab-929a-86b64d6360bc",
@@ -688,7 +691,12 @@
               "target": {
                 "id": "24b45371-c69d-43ab-929a-86b64d6360bc"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 290,
+                  "y": 330
+                }
+              ],
               "id": "c49e5c05-a44d-40f8-a738-a2afa9eadbdf",
               "labels": [
                 {
@@ -802,8 +810,8 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 207,
-                "y": 242
+                "x": 230,
+                "y": 260
               },
               "target": {
                 "x": 226,
@@ -813,6 +821,87 @@
               "id": "f687350c-7a6d-4f94-8e81-e7e72d72b978",
               "z": 32,
               "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "d00ac923-645f-49a8-947c-b701f1e7ee00"
+              },
+              "target": {
+                "id": "3ee0ba67-c046-4ada-83aa-5a864d1e2e8a"
+              },
+              "vertices": [
+                {
+                  "x": 530,
+                  "y": 330
+                }
+              ],
+              "id": "88ca3f16-790b-41d3-a2ad-6e21178e71fb",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.4175826555591308,
+                    "offset": 4.999281127716001
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Paho Client Object\nResponse",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 33,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "c46b50f3-ca49-4eaf-9d49-008c66d13fba"
+              },
+              "target": {
+                "id": "d00ac923-645f-49a8-947c-b701f1e7ee00"
+              },
+              "vertices": [
+                {
+                  "x": 940,
+                  "y": 330
+                }
+              ],
+              "id": "14971ed4-631b-4d61-9925-d7deac799e2b",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Paho Client Object\nResponse",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 34,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
