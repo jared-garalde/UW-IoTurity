@@ -410,7 +410,7 @@
                 "height": 80
               },
               "position": {
-                "x": 30,
+                "x": 20,
                 "y": 240
               },
               "angle": 0,
@@ -737,7 +737,7 @@
               },
               "position": {
                 "x": 710,
-                "y": 460
+                "y": 400
               },
               "angle": 0,
               "id": "f71618c1-9a3c-4b6e-9a3c-95b167cad31e",
@@ -788,8 +788,8 @@
                 "y": 260
               },
               "target": {
-                "x": 226,
-                "y": 425
+                "x": 230,
+                "y": 350
               },
               "vertices": [],
               "id": "f687350c-7a6d-4f94-8e81-e7e72d72b978",
@@ -918,22 +918,32 @@
                 "height": 80
               },
               "position": {
-                "x": 40,
+                "x": 70,
                 "y": 440
               },
               "angle": 0,
               "id": "fddfde9d-c164-4383-82e8-4a306cbc1fcc",
               "z": 36,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "title": "Publicly Viewable Codebase",
+                  "description": "You can see everything dude",
+                  "mitigation": "Make the repo private"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "GitHub"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -966,6 +976,66 @@
                 }
               ],
               "z": 37,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 470,
+                "y": 540
+              },
+              "angle": 0,
+              "id": "71f065c4-7f44-434b-bcc8-abefaf011248",
+              "z": 38,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Developer Reifers"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "71f065c4-7f44-434b-bcc8-abefaf011248"
+              },
+              "target": {
+                "id": "fddfde9d-c164-4383-82e8-4a306cbc1fcc"
+              },
+              "vertices": [],
+              "id": "d0f68f3c-7a8a-4f5e-9b7b-49e770acd583",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Commit Changes",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 39,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
