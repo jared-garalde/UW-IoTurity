@@ -34,7 +34,7 @@
               },
               "position": {
                 "x": 446,
-                "y": 138
+                "y": 136
               },
               "angle": 0,
               "id": "3ee0ba67-c046-4ada-83aa-5a864d1e2e8a",
@@ -213,8 +213,8 @@
                 "height": 100
               },
               "position": {
-                "x": 358,
-                "y": 506
+                "x": 301,
+                "y": 517
               },
               "angle": 0,
               "id": "24b45371-c69d-43ab-929a-86b64d6360bc",
@@ -386,8 +386,8 @@
               },
               "vertices": [
                 {
-                  "x": 1007,
-                  "y": 104
+                  "x": 1025,
+                  "y": 99
                 }
               ],
               "id": "ab2e89eb-c659-451c-9852-c31c4433f6c6",
@@ -407,15 +407,23 @@
                 }
               ],
               "z": 43,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "protocol": "MQTT",
               "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "See #P01",
+                  "type": "Tampering"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -431,7 +439,7 @@
               "vertices": [
                 {
                   "x": 1027,
-                  "y": 179
+                  "y": 158
                 }
               ],
               "id": "75a9881a-5b34-4e6f-9bdb-be372ff84a57",
@@ -451,15 +459,24 @@
                 }
               ],
               "z": 44,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "protocol": "MQTT",
               "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Any user can subscribe to topics",
+                  "type": "Elevation of privilege",
+                  "description": "Any normal user can subscribe to topics"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -499,10 +516,25 @@
                 {
                   "status": "Open",
                   "severity": "Medium",
-                  "title": "Any user can publish topics",
+                  "title": "Any user can publish topics #P01",
                   "type": "Tampering",
                   "description": "Any normal user can publish topics to MQTT broker. Can make changes to topics that smart device uses to perform logic.",
                   "mitigation": "Enforce authorization controls such as role-based access or user logins."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Any user can publish topics #P02",
+                  "type": "Elevation of privilege",
+                  "description": "No privileges or roles defined for publishing topics",
+                  "mitigation": "Establish roles with clear privileges for publishing"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "title": "Any user can publish topics #P03",
+                  "description": "No authorization controls so users can make changes without any way to differentiate"
                 }
               ],
               "attrs": {
@@ -521,22 +553,32 @@
                 "height": 100
               },
               "position": {
-                "x": 812,
+                "x": 811,
                 "y": 123
               },
               "angle": 0,
               "id": "5b357c26-cad9-4c51-ab80-9d62a892b70a",
               "z": 46,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "No limit on amount of requests",
+                  "type": "Denial of service",
+                  "description": "Many publish or subscribe requests can use up all memory or network bandwidth so clients can connect.",
+                  "mitigation": "Enforce publish/subscribe limit per client, overall request limits"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "MQTT Broker"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -606,8 +648,8 @@
               },
               "vertices": [
                 {
-                  "x": 176,
-                  "y": 184
+                  "x": 222,
+                  "y": 178
                 }
               ],
               "id": "dbb4be51-acd3-4407-bf94-367026bbe83d",
@@ -706,7 +748,7 @@
                   "severity": "High",
                   "title": "Publicly Viewable Codebase",
                   "type": "Information disclosure",
-                  "description": "The operation and logic that the smart device uses are viewable to the public in plaintext.",
+                  "description": "The operation and logic that the smart device uses are viewable to the public in plaintext. Provides valuable information for potential attack vectors.",
                   "mitigation": "Make repository private. Enforce proper authentication and role-based access. Possibly encrypt at rest to preserve confidentiality."
                 }
               ],
