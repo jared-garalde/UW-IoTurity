@@ -311,31 +311,6 @@
               }
             },
             {
-              "type": "tm.Boundary",
-              "smooth": true,
-              "source": {
-                "x": 361,
-                "y": 244
-              },
-              "target": {
-                "x": 546,
-                "y": 225
-              },
-              "vertices": [
-                {
-                  "x": 276,
-                  "y": 253
-                },
-                {
-                  "x": 433,
-                  "y": 233
-                }
-              ],
-              "id": "1d6c9a4b-5197-4cd5-98e0-13c9b263b783",
-              "z": 31,
-              "attrs": {}
-            },
-            {
               "type": "tm.Flow",
               "smooth": true,
               "source": {
@@ -579,6 +554,22 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 303,
+                "y": 230
+              },
+              "target": {
+                "x": 551,
+                "y": 237
+              },
+              "vertices": [],
+              "id": "b41bc655-7084-478f-a222-55c3877fae73",
+              "z": 48,
+              "attrs": {}
             }
           ]
         },
