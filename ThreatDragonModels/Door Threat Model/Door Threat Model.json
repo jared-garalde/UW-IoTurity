@@ -59,8 +59,8 @@
                 "height": 80
               },
               "position": {
-                "x": 32,
-                "y": 41
+                "x": 1,
+                "y": 209
               },
               "angle": 0,
               "id": "721901a6-e45f-4fec-a37e-532e53874fea",
@@ -85,8 +85,8 @@
                 "height": 80
               },
               "position": {
-                "x": 882,
-                "y": 338
+                "x": 900,
+                "y": 489
               },
               "angle": 0,
               "id": "c0bb15e1-a886-460f-8d12-ddd532835868",
@@ -136,8 +136,8 @@
               },
               "vertices": [
                 {
-                  "x": 886,
-                  "y": 253
+                  "x": 945,
+                  "y": 289
                 }
               ],
               "id": "add72846-efe0-4723-8e64-d2899f5919a4",
@@ -176,7 +176,12 @@
               "target": {
                 "id": "3ee0ba67-c046-4ada-83aa-5a864d1e2e8a"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 481,
+                  "y": 310
+                }
+              ],
               "id": "60bdaaa9-145b-48d9-843a-598751abf3be",
               "labels": [
                 {
@@ -238,8 +243,8 @@
               },
               "vertices": [
                 {
-                  "x": 188,
-                  "y": 277
+                  "x": 358,
+                  "y": 302
                 }
               ],
               "id": "c49e5c05-a44d-40f8-a738-a2afa9eadbdf",
@@ -277,8 +282,8 @@
               },
               "vertices": [
                 {
-                  "x": 827,
-                  "y": 259
+                  "x": 851,
+                  "y": 333
                 }
               ],
               "id": "c5930ca3-9efa-4252-b093-f91323bb683b",
@@ -306,43 +311,21 @@
               }
             },
             {
-              "type": "tm.Store",
-              "size": {
-                "width": 160,
-                "height": 80
-              },
-              "position": {
-                "x": 620,
-                "y": 464
-              },
-              "angle": 0,
-              "id": "f71618c1-9a3c-4b6e-9a3c-95b167cad31e",
-              "z": 30,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "Messages"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 315,
-                "y": 234
+                "x": 361,
+                "y": 244
               },
               "target": {
                 "x": 546,
                 "y": 225
               },
               "vertices": [
+                {
+                  "x": 276,
+                  "y": 253
+                },
                 {
                   "x": 433,
                   "y": 233
@@ -353,36 +336,20 @@
               "attrs": {}
             },
             {
-              "type": "tm.Boundary",
-              "smooth": true,
-              "source": {
-                "x": 287,
-                "y": 310
-              },
-              "target": {
-                "x": 145,
-                "y": 398
-              },
-              "vertices": [
-                {
-                  "x": 277,
-                  "y": 320
-                }
-              ],
-              "id": "f687350c-7a6d-4f94-8e81-e7e72d72b978",
-              "z": 32,
-              "attrs": {}
-            },
-            {
               "type": "tm.Flow",
               "smooth": true,
               "source": {
                 "id": "24b45371-c69d-43ab-929a-86b64d6360bc"
               },
               "target": {
-                "id": "f71618c1-9a3c-4b6e-9a3c-95b167cad31e"
+                "id": "721901a6-e45f-4fec-a37e-532e53874fea"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 193,
+                  "y": 437
+                }
+              ],
               "id": "e3043cc1-72df-40db-b1b8-4d1fcef09461",
               "labels": [
                 {
@@ -414,8 +381,8 @@
                 "height": 80
               },
               "position": {
-                "x": 1392,
-                "y": 41
+                "x": 1142,
+                "y": 77
               },
               "angle": 0,
               "id": "90071eeb-eb92-40f7-819f-ce5c823e8d33",
@@ -444,8 +411,8 @@
               },
               "vertices": [
                 {
-                  "x": 1220,
-                  "y": 52
+                  "x": 1037,
+                  "y": 77
                 }
               ],
               "id": "ab2e89eb-c659-451c-9852-c31c4433f6c6",
@@ -484,8 +451,8 @@
               },
               "vertices": [
                 {
-                  "x": 1147,
-                  "y": 167
+                  "x": 1007,
+                  "y": 143
                 }
               ],
               "id": "75a9881a-5b34-4e6f-9bdb-be372ff84a57",
