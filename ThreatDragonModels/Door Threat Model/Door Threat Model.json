@@ -74,6 +74,8 @@
               "id": "721901a6-e45f-4fec-a37e-532e53874fea",
               "z": 17,
               "hasOpenThreats": false,
+              "storesCredentials": true,
+              "isALog": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -108,6 +110,7 @@
                   "type": "Repudiation"
                 }
               ],
+              "isALog": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasOpenThreats isInScope"
@@ -658,6 +661,7 @@
                   "type": "Spoofing"
                 }
               ],
+              "privilegeLevel": "None",
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasOpenThreats isInScope"
@@ -736,8 +740,8 @@
               },
               "vertices": [
                 {
-                  "x": 226,
-                  "y": 169
+                  "x": 213,
+                  "y": 179
                 }
               ],
               "id": "dbb4be51-acd3-4407-bf94-367026bbe83d",
@@ -788,8 +792,8 @@
               },
               "vertices": [
                 {
-                  "x": 87,
-                  "y": 177
+                  "x": 70,
+                  "y": 197
                 }
               ],
               "id": "d25e115d-30c9-478c-bc86-45784ffed935",
@@ -840,6 +844,7 @@
                   "mitigation": "Make repository private. Enforce proper authentication and role-based access. Possibly encrypt at rest to preserve confidentiality."
                 }
               ],
+              "storesCredentials": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasOpenThreats isInScope"
