@@ -39,16 +39,24 @@
               "angle": 0,
               "id": "3ee0ba67-c046-4ada-83aa-5a864d1e2e8a",
               "z": 4,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "title": "Publisher client identifiers not randomized in MQTT broker"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Publisher Client"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -59,8 +67,8 @@
                 "height": 80
               },
               "position": {
-                "x": 73,
-                "y": 312
+                "x": 88,
+                "y": 327
               },
               "angle": 0,
               "id": "721901a6-e45f-4fec-a37e-532e53874fea",
@@ -85,22 +93,30 @@
                 "height": 80
               },
               "position": {
-                "x": 881,
-                "y": 447
+                "x": 883,
+                "y": 449
               },
               "angle": 0,
               "id": "c0bb15e1-a886-460f-8d12-ddd532835868",
               "z": 18,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "No security logs in Azure cloud storage",
+                  "type": "Repudiation"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Azure Cloud Storage"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -112,13 +128,13 @@
                 "y": 304
               },
               "target": {
-                "x": 1013,
-                "y": 258
+                "x": 1006,
+                "y": 273
               },
               "vertices": [
                 {
-                  "x": 902,
-                  "y": 289
+                  "x": 891,
+                  "y": 257
                 }
               ],
               "id": "e266526c-10c0-4a07-9b13-d6f7b97f15a7",
@@ -178,8 +194,8 @@
               },
               "vertices": [
                 {
-                  "x": 495,
-                  "y": 335
+                  "x": 422,
+                  "y": 365
                 }
               ],
               "id": "60bdaaa9-145b-48d9-843a-598751abf3be",
@@ -196,13 +212,27 @@
                 }
               ],
               "z": 26,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "State change is in plaintext",
+                  "type": "Information disclosure"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "State change logic in plaintext",
+                  "type": "Tampering"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -213,22 +243,32 @@
                 "height": 100
               },
               "position": {
-                "x": 301,
-                "y": 517
+                "x": 139,
+                "y": 513
               },
               "angle": 0,
               "id": "24b45371-c69d-43ab-929a-86b64d6360bc",
               "z": 27,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Boolean logic is by string matching",
+                  "type": "Spoofing",
+                  "description": "Threat actors can send topics to satisfy boolean logic in door check",
+                  "mitigation": "Use numbers or stored procedures etc."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "State Change\nCheck"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -243,8 +283,8 @@
               },
               "vertices": [
                 {
-                  "x": 413,
-                  "y": 320
+                  "x": 373,
+                  "y": 324
                 }
               ],
               "id": "c49e5c05-a44d-40f8-a738-a2afa9eadbdf",
@@ -261,13 +301,21 @@
                 }
               ],
               "z": 28,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Status is sent in plaintext",
+                  "type": "Tampering"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -319,12 +367,7 @@
               "target": {
                 "id": "721901a6-e45f-4fec-a37e-532e53874fea"
               },
-              "vertices": [
-                {
-                  "x": 198,
-                  "y": 484
-                }
-              ],
+              "vertices": [],
               "id": "e3043cc1-72df-40db-b1b8-4d1fcef09461",
               "labels": [
                 {
@@ -356,22 +399,49 @@
                 "height": 80
               },
               "position": {
-                "x": 1184,
-                "y": 78
+                "x": 1182,
+                "y": 77
               },
               "angle": 0,
               "id": "90071eeb-eb92-40f7-819f-ce5c823e8d33",
               "z": 40,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "title": "Tainted requests can modify client",
+                  "description": ""
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "title": "Lateral movement through client network"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Tainted topics can disclose information",
+                  "type": "Information disclosure"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "DDoS with subscription updates",
+                  "type": "Denial of service"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Subscriber Client"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -438,8 +508,8 @@
               },
               "vertices": [
                 {
-                  "x": 1027,
-                  "y": 158
+                  "x": 1001,
+                  "y": 157
                 }
               ],
               "id": "75a9881a-5b34-4e6f-9bdb-be372ff84a57",
@@ -535,6 +605,18 @@
                   "type": "Spoofing",
                   "title": "Any user can publish topics #P03",
                   "description": "No authorization controls so users can make changes without any way to differentiate"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "title": "Over public network"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "No network encryption",
+                  "type": "Information disclosure"
                 }
               ],
               "attrs": {
@@ -553,7 +635,7 @@
                 "height": 100
               },
               "position": {
-                "x": 811,
+                "x": 810,
                 "y": 123
               },
               "angle": 0,
@@ -568,6 +650,12 @@
                   "type": "Denial of service",
                   "description": "Many publish or subscribe requests can use up all memory or network bandwidth so clients can connect.",
                   "mitigation": "Enforce publish/subscribe limit per client, overall request limits"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "No check for secure and trustworthy connections to MQTT Broker",
+                  "type": "Spoofing"
                 }
               ],
               "attrs": {
@@ -629,7 +717,7 @@
                 "y": 270
               },
               "target": {
-                "x": 545,
+                "x": 565,
                 "y": 300
               },
               "vertices": [],
@@ -648,8 +736,8 @@
               },
               "vertices": [
                 {
-                  "x": 222,
-                  "y": 178
+                  "x": 226,
+                  "y": 169
                 }
               ],
               "id": "dbb4be51-acd3-4407-bf94-367026bbe83d",
@@ -700,7 +788,7 @@
               },
               "vertices": [
                 {
-                  "x": 93,
+                  "x": 87,
                   "y": 177
                 }
               ],
@@ -784,6 +872,32 @@
               "id": "bae6964e-6334-4575-a8b7-841d02bd6274",
               "z": 54,
               "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1182,
+                "y": 198
+              },
+              "angle": 0,
+              "id": "00da4d3f-c607-45c9-b58b-78b728e64313",
+              "z": 55,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Subscriber Store"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
