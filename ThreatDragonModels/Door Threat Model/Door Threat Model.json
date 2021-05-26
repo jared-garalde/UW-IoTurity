@@ -33,30 +33,23 @@
                 "height": 80
               },
               "position": {
-                "x": 423,
+                "x": 386,
                 "y": 147
               },
               "angle": 0,
               "id": "3ee0ba67-c046-4ada-83aa-5a864d1e2e8a",
               "z": 4,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Repudiation",
-                  "title": "Publisher client identifiers not randomized in MQTT broker"
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Smart Door"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -89,27 +82,14 @@
                 }
               ],
               "z": 26,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "title": "State change is in plaintext",
-                  "type": "Information disclosure"
-                },
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "title": "State change logic in plaintext",
-                  "type": "Tampering"
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -126,26 +106,17 @@
               "angle": 0,
               "id": "24b45371-c69d-43ab-929a-86b64d6360bc",
               "z": 27,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "title": "Boolean logic is by string matching",
-                  "type": "Spoofing",
-                  "description": "Threat actors can send topics to satisfy boolean logic in door check",
-                  "mitigation": "Use numbers or stored procedures etc."
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Door\nLock/Unlock"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -159,6 +130,10 @@
                 "id": "24b45371-c69d-43ab-929a-86b64d6360bc"
               },
               "vertices": [
+                {
+                  "x": 407,
+                  "y": 294
+                },
                 {
                   "x": 406,
                   "y": 318
@@ -178,21 +153,14 @@
                 }
               ],
               "z": 28,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "title": "Status is sent in plaintext",
-                  "type": "Tampering"
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -228,23 +196,17 @@
                 }
               ],
               "z": 43,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "protocol": "MQTT",
               "isPublicNetwork": true,
-              "threats": [
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "title": "See #P01",
-                  "type": "Tampering"
-                }
-              ],
+              "threats": [],
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -280,24 +242,17 @@
                 }
               ],
               "z": 44,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "protocol": "MQTT",
-              "isPublicNetwork": true,
-              "threats": [
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "title": "Any user can subscribe to topics",
-                  "type": "Elevation of privilege",
-                  "description": "Any normal user can subscribe to topics"
-                }
-              ],
+              "isPublicNetwork": false,
+              "threats": [],
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -308,39 +263,24 @@
                 "height": 100
               },
               "position": {
-                "x": 810,
-                "y": 123
+                "x": 791,
+                "y": 135
               },
               "angle": 0,
               "id": "5b357c26-cad9-4c51-ab80-9d62a892b70a",
               "z": 46,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "title": "No limit on amount of requests",
-                  "type": "Denial of service",
-                  "description": "Many publish or subscribe requests can use up all memory or network bandwidth so clients can connect.",
-                  "mitigation": "Enforce publish/subscribe limit per client, overall request limits"
-                },
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "title": "No check for secure and trustworthy connections to MQTT Broker",
-                  "type": "Spoofing"
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "privilegeLevel": "None",
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "MQTT Broker"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -352,8 +292,8 @@
                 "y": 248
               },
               "target": {
-                "x": 598,
-                "y": 300
+                "x": 658,
+                "y": 275
               },
               "vertices": [],
               "id": "b41bc655-7084-478f-a222-55c3877fae73",
@@ -393,8 +333,8 @@
                 "height": 80
               },
               "position": {
-                "x": 167,
-                "y": 529
+                "x": 107,
+                "y": 567
               },
               "angle": 0,
               "id": "197c3f2c-984c-43d5-a6f1-d965b36a6fdf",
@@ -458,7 +398,7 @@
                 "height": 100
               },
               "position": {
-                "x": 1141,
+                "x": 1142,
                 "y": 69
               },
               "angle": 0,
@@ -485,7 +425,7 @@
               },
               "position": {
                 "x": 1166,
-                "y": 504
+                "y": 503
               },
               "angle": 0,
               "id": "523a0a1a-fb91-4293-96a2-8ccaf40243ab",
@@ -693,10 +633,15 @@
                 "y": 64
               },
               "target": {
-                "x": 984,
-                "y": 203
+                "x": 971,
+                "y": 247
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 1019,
+                  "y": 178
+                }
+              ],
               "id": "b2c1c2a4-32db-4c05-94cb-a1baf2c079bb",
               "z": 78,
               "attrs": {}
@@ -705,14 +650,23 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 694,
-                "y": 123
+                "x": 628,
+                "y": 3
               },
               "target": {
-                "x": 778,
-                "y": 261
+                "x": 784,
+                "y": 265
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 659,
+                  "y": 57
+                },
+                {
+                  "x": 758,
+                  "y": 232
+                }
+              ],
               "id": "7ae26670-e831-4e48-bee5-d18af706bd66",
               "z": 79,
               "attrs": {}
@@ -724,8 +678,8 @@
                 "height": 100
               },
               "position": {
-                "x": 888,
-                "y": 435
+                "x": 891,
+                "y": 419
               },
               "angle": 0,
               "id": "ebd11639-7c49-4781-8ae3-d4ebe0f374ab",
@@ -754,8 +708,8 @@
               },
               "vertices": [
                 {
-                  "x": 959,
-                  "y": 320
+                  "x": 926,
+                  "y": 297
                 }
               ],
               "id": "b985c2d6-b30c-4914-a3ec-b6f5b0c876c0",
@@ -774,6 +728,7 @@
               "z": 81,
               "hasOpenThreats": false,
               "isPublicNetwork": true,
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -837,8 +792,8 @@
               },
               "vertices": [
                 {
-                  "x": 844,
-                  "y": 353
+                  "x": 882,
+                  "y": 352
                 }
               ],
               "id": "3bc36e10-6939-4001-b752-e4b90a70e3c1",
@@ -857,6 +812,7 @@
               "z": 83,
               "hasOpenThreats": false,
               "isPublicNetwork": true,
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -909,16 +865,348 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 798,
-                "y": 296
+                "x": 759,
+                "y": 298
               },
               "target": {
                 "x": 1000,
                 "y": 256
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 897,
+                  "y": 283
+                }
+              ],
               "id": "9e3ce83e-9269-43b9-84ac-93bdd70da740",
               "z": 85,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 517,
+                "y": 463
+              },
+              "angle": 0,
+              "id": "10d778da-470d-44e7-abed-21e3f05ac86c",
+              "z": 86,
+              "hasOpenThreats": false,
+              "isALog": true,
+              "isEncrypted": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Log Store (Azure)"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "3ee0ba67-c046-4ada-83aa-5a864d1e2e8a"
+              },
+              "target": {
+                "id": "5b357c26-cad9-4c51-ab80-9d62a892b70a"
+              },
+              "vertices": [
+                {
+                  "x": 579,
+                  "y": 248
+                },
+                {
+                  "x": 694,
+                  "y": 243
+                }
+              ],
+              "id": "16ca39b7-144c-4bf7-b456-fb608a4e2336",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Activity Logs",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 87,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "protocol": "TLS",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5b357c26-cad9-4c51-ab80-9d62a892b70a"
+              },
+              "target": {
+                "id": "10d778da-470d-44e7-abed-21e3f05ac86c"
+              },
+              "vertices": [
+                {
+                  "x": 683,
+                  "y": 349
+                }
+              ],
+              "id": "eb6da4f2-bd60-4c1d-895c-ecb83ece9b8f",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Activity Logs",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 88,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "protocol": "TLS",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "65401b98-e442-43cc-a3b2-50783389da6c"
+              },
+              "target": {
+                "id": "5b357c26-cad9-4c51-ab80-9d62a892b70a"
+              },
+              "vertices": [
+                {
+                  "x": 1081,
+                  "y": 199
+                },
+                {
+                  "x": 989,
+                  "y": 218
+                }
+              ],
+              "id": "871febd4-414b-48e0-a7e7-3e32d6983b97",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Activity Logs",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 89,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "ebd11639-7c49-4781-8ae3-d4ebe0f374ab"
+              },
+              "target": {
+                "id": "5b357c26-cad9-4c51-ab80-9d62a892b70a"
+              },
+              "vertices": [
+                {
+                  "x": 1052,
+                  "y": 382
+                }
+              ],
+              "id": "293dc1f1-e1a8-444f-9ab3-88c90b1e3d74",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Activity Logs",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 90,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "protocol": "TLS",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 446,
+                "y": 12
+              },
+              "angle": 0,
+              "id": "1d45c467-6ac0-449f-8316-7e6addeaa189",
+              "z": 91,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Authentication\nService (SSO)?"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5b357c26-cad9-4c51-ab80-9d62a892b70a"
+              },
+              "target": {
+                "id": "1d45c467-6ac0-449f-8316-7e6addeaa189"
+              },
+              "vertices": [
+                {
+                  "x": 769,
+                  "y": 29
+                }
+              ],
+              "id": "1ff99c6d-fc05-45be-85a0-e66177c6a85c",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Login",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 92,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "1d45c467-6ac0-449f-8316-7e6addeaa189"
+              },
+              "target": {
+                "id": "5b357c26-cad9-4c51-ab80-9d62a892b70a"
+              },
+              "vertices": [
+                {
+                  "x": 704,
+                  "y": 100
+                }
+              ],
+              "id": "8f900270-d637-41bb-a5d6-ffe6f0e9d130",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.514508131950755,
+                    "offset": 4.104338727782202
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Login status",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 93,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 1285,
+                "y": 19
+              },
+              "target": {
+                "x": 1400,
+                "y": 169
+              },
+              "vertices": [
+                {
+                  "x": 1390,
+                  "y": 79
+                }
+              ],
+              "id": "67971d7f-e19e-4a21-b9bc-78a279317691",
+              "z": 94,
               "attrs": {}
             }
           ]
